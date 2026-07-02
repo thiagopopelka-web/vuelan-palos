@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f7f1e7;
+  --paper-soft: #fffaf2;
+  --ink: #111111;
+  --muted: #6e6257;
+  --wood: #5b3218;
+  --softwood: #8a5a33;
+  --line: #d8c8b5;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, var(--paper-soft), var(--paper));
+  color: var(--ink);
+}
+
+.logo-sticks {
+  transition: transform 360ms ease;
+}
+
+.logo-wrap:hover .logo-sticks {
+  transform: translateX(5px);
+}
+
+.hero-photo {
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.45), rgba(0,0,0,.06)),
+    url("https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1800&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+
+.feature-photo-a {
+  background:
+    linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1200&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-photo-b {
+  background:
+    linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-photo-c {
+  background:
+    linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.kicker {
+  color: var(--softwood);
+  text-transform: uppercase;
+  font-size: .77rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.wood-button {
+  background: var(--wood);
+  color: white;
+}
+
+.wood-text { color: var(--wood); }
+
+.paper-card {
+  background: rgba(255,250,242,.62);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 820px) {
+  .nav-scroll {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+}
