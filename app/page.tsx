@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "../components/Header";
 
 const smallStories = [
   { section: "Actualidad", title: "Una ley que cambia conversaciones públicas", meta: "Por Redacción · 2 min" },
